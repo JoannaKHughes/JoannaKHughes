@@ -17,6 +17,8 @@
   <img src="assets/stats.svg" alt="Contribution statistics" width="100%">
 </p>
 
+<p align="center"><sub>All time: 384 on GitHub (since 2021) · 315 on GitLab (since 2024)</sub></p>
+
 <p align="center">
   <img src="assets/kelp.svg" alt="Monthly contributions by source, drawn as kelp" width="100%">
 </p>

@@ -7,8 +7,8 @@ the lab GitLab server is only reachable from the campus network.
 Inputs
   - GitHub daily contributions: GraphQL API when a token is available
     (includes private contributions), otherwise the public contributions page.
-  - GitLab daily events: /api/v4/users/:id/events with a read_api token,
-    otherwise the public calendar.json (empty when the profile is private).
+  - GitLab: commits on default branches + MRs + issues (GitHub-style) via the
+    API with a read_api token, otherwise the public calendar.json (empty when the profile is private).
   - projects.md: hand-maintained Projects tables, copied into the README.
 
 Tokens are read from the environment (PROFILE_TOKEN, GITLAB_TOKEN) or from
@@ -41,6 +41,9 @@ from pathlib import Path
 GITHUB_USER = "JoannaKHughes"
 GITLAB_HOST = os.environ.get("GITLAB_HOST", "https://gitlab.vgl.cvg.ucdavis.edu")
 GITLAB_USER = os.environ.get("GITLAB_USER", "joanna")
+# Commit author emails that are Joanna's (seen in local clones of the GitLab repos).
+GITLAB_EMAILS = {"jkhughes@ucdavis.edu", "joanna@magpie.vgl.cvg.ucdavis.edu",
+                 "joanna@host.docker.internal", "86841107+joannakhughes@users.noreply.github.com"}
 
 # LinkedIn custom URL slug (linkedin.com/in/<slug>). Change here if it changes on LinkedIn.
 LINKEDIN = "jokhughes"
@@ -157,6 +160,12 @@ def github_contributions(start, end):
         except Exception as exc:  # fall back to the public page
             log(f"GitHub API failed ({type(exc).__name__}); using public contributions page")
 
+    return github_page_days(start, end), {}, "GitHub public page", None
+
+
+def github_page_days(start, end):
+    """Daily counts from the public contributions page (includes private
+    contributions as plain counts when that profile setting is on)."""
     text, _ = http_get(f"https://github.com/users/{GITHUB_USER}/contributions"
                        f"?from={start.isoformat()}&to={end.isoformat()}")
     dates = dict(re.findall(r'data-date="(\d{4}-\d{2}-\d{2})"[^>]*?id="([^"]+)"', text))
@@ -168,48 +177,61 @@ def github_contributions(start, end):
     for date_s, cell_id in dates.items():
         m = re.match(r"(\d+) contribution", tips.get(cell_id, ""))
         days[dt.date.fromisoformat(date_s)] = int(m.group(1)) if m else 0
-    return days, {}, "GitHub public page", None
+    return days
+
+
+def github_all_time(end):
+    """(total, first year) over every calendar year since the account was made."""
+    text, _ = http_get(f"https://api.github.com/users/{GITHUB_USER}")
+    first = int(json.loads(text)["created_at"][:4])
+    total = 0
+    for year in range(first, end.year + 1):
+        total += sum(github_page_days(dt.date(year, 1, 1), min(dt.date(year, 12, 31), end)).values())
+    return total, first
 
 
 def gitlab_contributions(start, end):
-    """Return (public {date: count}, private {date: count}, source).
+    """Return (all-time {date: count}, {}, source), counted the way GitHub counts.
 
-    Events in private or internal projects count as Private.
+    A contribution is a commit Joanna authored on a project's default branch
+    (matched by GITLAB_EMAILS, de-duplicated by SHA across forks), a merge
+    request she opened, or an issue she opened. Pushes, comments and other
+    people's commits she pushed or merged do not count. Callers trim to the
+    12-month window; the full dict feeds the all-time line.
     """
     token = read_token("GITLAB_TOKEN", "gitlab_token")
     api = f"{GITLAB_HOST}/api/v4"
     if token:
         try:
             headers = {"PRIVATE-TOKEN": token}
+
+            def pages(url):
+                page = 1
+                while page:
+                    sep = "&" if "?" in url else "?"
+                    text, resp_headers = http_get(f"{url}{sep}per_page=100&page={page}", headers=headers)
+                    yield from json.loads(text)
+                    nxt = resp_headers.get("X-Next-Page", "")
+                    page = int(nxt) if nxt.isdigit() else 0
+
             text, _ = http_get(f"{api}/users?username={urllib.parse.quote(GITLAB_USER)}", headers=headers)
             user_id = json.loads(text)[0]["id"]
-            public, private = defaultdict(int), defaultdict(int)
-            visibility = {}
-
-            def is_private(project_id):
-                if project_id is None:
-                    return False
-                if project_id not in visibility:
-                    try:
-                        t, _ = http_get(f"{api}/projects/{project_id}", headers=headers)
-                        visibility[project_id] = json.loads(t).get("visibility", "private")
-                    except Exception:
-                        visibility[project_id] = "private"
-                return visibility[project_id] != "public"
-
-            page = 1
-            while page:
-                url = (f"{api}/users/{user_id}/events?per_page=100&page={page}"
-                       f"&after={(start - dt.timedelta(days=1)).isoformat()}"
-                       f"&before={(end + dt.timedelta(days=1)).isoformat()}")
-                text, resp_headers = http_get(url, headers=headers)
-                for event in json.loads(text):
-                    day = dt.date.fromisoformat(event["created_at"][:10])
-                    if start <= day <= end:
-                        (private if is_private(event.get("project_id")) else public)[day] += 1
-                nxt = resp_headers.get("X-Next-Page", "")
-                page = int(nxt) if nxt.isdigit() else 0
-            return dict(public), dict(private), "GitLab API (private split out)"
+            days = defaultdict(int)
+            seen = set()
+            for project in pages(f"{api}/projects?membership=true&simple=true&archived=false"):
+                branch = project.get("default_branch")
+                if not branch:
+                    continue
+                for c in pages(f"{api}/projects/{project['id']}/repository/commits"
+                               f"?ref_name={urllib.parse.quote(branch)}"):
+                    if c["id"] in seen or c.get("author_email", "").lower() not in GITLAB_EMAILS:
+                        continue
+                    seen.add(c["id"])
+                    days[dt.date.fromisoformat(c["authored_date"][:10])] += 1
+            for kind in ("merge_requests", "issues"):
+                for item in pages(f"{api}/{kind}?author_id={user_id}&scope=all&state=all"):
+                    days[dt.date.fromisoformat(item["created_at"][:10])] += 1
+            return dict(days), {}, "GitLab API (commits on default branch + MRs + issues)"
         except Exception as exc:
             log(f"GitLab API failed ({type(exc).__name__}); using public calendar")
 
@@ -409,7 +431,7 @@ def school_svg(by_source, start, end):
     return "\n".join(parts)
 
 
-def readme(projects_md, updated):
+def readme(projects_md, updated, all_time=""):
     degrees = "\n".join(f"- {d}, {s}, {y}" for d, s, y in DEGREES)
     return f"""<p align="center">
   <img src="assets/banner.png" alt="Joanna Hughes" width="100%">
@@ -428,7 +450,9 @@ def readme(projects_md, updated):
 <p align="center">
   <img src="assets/stats.svg" alt="Contribution statistics" width="100%">
 </p>
-
+{f"""
+<p align="center"><sub>{html.escape(all_time)}</sub></p>
+""" if all_time else ""}
 <p align="center">
   <img src="assets/kelp.svg" alt="Monthly contributions by source, drawn as kelp" width="100%">
 </p>
@@ -487,10 +511,19 @@ def main():
 
     if demo:
         github, gitlab, private, repo_count = demo_data(start)
+        all_time = "All time: 1,234 on GitHub (since 2021) · 567 on GitLab (since 2024)"
         log("DEMO: made-up numbers")
     else:
         github, gh_private, gh_source, repo_count = github_contributions(start, end)
         gitlab, gl_private, gl_source = gitlab_contributions(start, end)
+        try:
+            gh_all, gh_first = github_all_time(end)
+            gl_all = sum(v for k, v in gitlab.items() if k <= end)
+            gl_first = min(gitlab).year if gitlab else end.year
+            all_time = f"All time: {gh_all:,} on GitHub (since {gh_first}) · {gl_all:,} on GitLab (since {gl_first})"
+        except Exception as exc:
+            log(f"all-time totals failed ({type(exc).__name__}); line omitted")
+            all_time = ""
         # Joanna: show private-repo work as plain GitHub/GitLab counts. Only the
         # numbers are published; repo names and code stay private.
         github, gitlab, private = merge(github, gh_private), merge(gitlab, gl_private), {}
@@ -512,7 +545,7 @@ def main():
     (out / "assets" / "kelp.svg").write_text(kelp_svg(by_source, start, end))
     (out / "assets" / "school.svg").write_text(school_svg(by_source, start, end))
     projects = (ROOT / "projects.md").read_text()
-    (out / "README.md").write_text(readme(projects, end.isoformat()))
+    (out / "README.md").write_text(readme(projects, end.isoformat(), all_time))
     for old in ("sea-serpent.svg",):  # replaced by school.svg
         (out / "assets" / old).unlink(missing_ok=True)
     if demo:
