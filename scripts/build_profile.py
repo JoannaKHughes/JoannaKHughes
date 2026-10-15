@@ -489,7 +489,10 @@ def main():
     log(", ".join(f"{k}: {sum(v.values())}" for k, v in by_source.items()))
 
     totals = merge(*by_source.values())
-    cards = [(f"{sum(v.values()):,}", f"{k} contributions", SOURCES[k]) for k, v in by_source.items()]
+    # Private only gets a card once it has data (it needs tokens); GitHub and
+    # GitLab always show, even at 0, per Joanna.
+    cards = [(f"{sum(v.values()):,}", f"{k} contributions", SOURCES[k])
+             for k, v in by_source.items() if k != "Private" or sum(v.values())]
     cards.append((f"{sum(1 for v in totals.values() if v):,}", "Active days, 12 months", TEXT))
     if repo_count is not None:
         cards.append((f"{repo_count:,}", "GitHub repositories", MUTED))
