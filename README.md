@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/joanna-k-hughes"><img src="https://img.shields.io/badge/LinkedIn-joanna--k--hughes-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/jokhughes"><img src="https://img.shields.io/badge/LinkedIn-jokhughes-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
 ## Degrees

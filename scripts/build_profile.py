@@ -43,7 +43,7 @@ GITLAB_HOST = os.environ.get("GITLAB_HOST", "https://gitlab.vgl.cvg.ucdavis.edu"
 GITLAB_USER = os.environ.get("GITLAB_USER", "joanna")
 
 # LinkedIn custom URL slug (linkedin.com/in/<slug>). Change here if it changes on LinkedIn.
-LINKEDIN = "joanna-k-hughes"
+LINKEDIN = "jokhughes"
 
 DEGREES = [
     # (degree, school, year)
