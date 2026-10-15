@@ -2,7 +2,7 @@
 
 [← Back to profile](https://github.com/JoannaKHughes)
 
-|  | Project | Description | Languages |
+|  | Project | Description | Built with |
 |---|---|---|---|
 | <img src="../assets/icons/mp3.svg" width="40" alt=""> | [MP3-Player](https://github.com/JoannaKHughes/MP3-Player) | MP3 player on a TI development board: playback, volume control, previous-song history and numeric song selection | C |
 | <img src="../assets/icons/taillights.svg" width="40" alt=""> | [Tail-Lights-FPGA](https://github.com/JoannaKHughes/Tail-Lights-FPGA) | State machine driving Ford Mustang-style sequential tail lights (left, right, hazard) on an FPGA | SystemVerilog |

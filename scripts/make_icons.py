@@ -198,7 +198,7 @@ ICONS = {
     "pv-study": (trio, LAVENDER), "snp-sim": (dice, SKY), "pedigree": (pedigree, CORAL),
     # software
     "whale": (whale, SKY), "vgl-chatbot": (chat_widget, TEAL), "chatbot": (chat, LAVENDER),
-    "phish": (shield, CORAL), "banking": (bank, GOLD), "website": (globe, SKY),
+    "junit": (checks, TEAL), "phish": (shield, CORAL), "banking": (bank, GOLD), "website": (globe, SKY),
     # embedded
     "mp3": (note, LAVENDER), "taillights": (lights, CORAL), "wheelchair": (wheel, TEAL), "co2": (tree, TEAL),
     # category headers
