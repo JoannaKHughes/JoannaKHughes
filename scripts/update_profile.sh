@@ -1,6 +1,6 @@
 #!/bin/bash
 # Daily profile rebuild on magpie: build, commit if anything changed, push over SSH.
-# cron: 15 6 * * * $HOME/Downloads/github-profile/scripts/update_profile.sh >> $HOME/profile_update.log 2>&1
+# cron: 15 6 * * * /mnt/ssd/github/JoannaKHughes/scripts/update_profile.sh >> $HOME/profile_update.log 2>&1
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 exec 9>/tmp/profile_update.lock
 flock -n 9 || exit 0
