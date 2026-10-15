@@ -237,6 +237,8 @@ def svg_open(width, height, label):
 def legend(x, y):
     parts = []
     for name, color in SOURCES.items():
+        if name == "Private":  # folded into GitHub/GitLab counts (Joanna, 2026-10-15)
+            continue
         parts += [
             f'<rect x="{x}" y="{y - 9}" width="10" height="10" rx="2" fill="{color}"/>',
             f'<text x="{x + 15}" y="{y}" fill="{MUTED}" font-family="{FONT}" font-size="12">{name}</text>',
@@ -489,8 +491,10 @@ def main():
     else:
         github, gh_private, gh_source, repo_count = github_contributions(start, end)
         gitlab, gl_private, gl_source = gitlab_contributions(start, end)
-        private = merge(gh_private, gl_private)
-        log(f"GitHub from {gh_source}; GitLab from {gl_source}")
+        # Joanna: show private-repo work as plain GitHub/GitLab counts. Only the
+        # numbers are published; repo names and code stay private.
+        github, gitlab, private = merge(github, gh_private), merge(gitlab, gl_private), {}
+        log(f"GitHub from {gh_source}; GitLab from {gl_source}; private folded into each")
     in_range = lambda d: {k: v for k, v in d.items() if start <= k <= end}
     by_source = dict(zip(SOURCES, (in_range(github), in_range(gitlab), in_range(private))))
     log(", ".join(f"{k}: {sum(v.values())}" for k, v in by_source.items()))

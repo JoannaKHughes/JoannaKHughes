@@ -2,14 +2,14 @@
 <rect width="1000" height="150" rx="12" fill="#111a2e"/>
 <rect x="20.0" y="20" width="309.3" height="110" rx="10" fill="#16213a" stroke="#2a3650"/>
 <rect x="20.0" y="20" width="309.3" height="3" rx="1.5" fill="#6fd3c1"/>
-<text x="36.0" y="75" fill="#e8edf5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="32" font-weight="600">246</text>
+<text x="36.0" y="75" fill="#e8edf5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="32" font-weight="600">239</text>
 <text x="36.0" y="106" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">GitHub contributions</text>
 <rect x="345.3" y="20" width="309.3" height="110" rx="10" fill="#16213a" stroke="#2a3650"/>
 <rect x="345.3" y="20" width="309.3" height="3" rx="1.5" fill="#f2a07b"/>
-<text x="361.3" y="75" fill="#e8edf5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="32" font-weight="600">0</text>
+<text x="361.3" y="75" fill="#e8edf5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="32" font-weight="600">101</text>
 <text x="361.3" y="106" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">GitLab contributions</text>
 <rect x="670.7" y="20" width="309.3" height="110" rx="10" fill="#16213a" stroke="#2a3650"/>
 <rect x="670.7" y="20" width="309.3" height="3" rx="1.5" fill="#e8edf5"/>
-<text x="686.7" y="75" fill="#e8edf5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="32" font-weight="600">105</text>
+<text x="686.7" y="75" fill="#e8edf5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="32" font-weight="600">120</text>
 <text x="686.7" y="106" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">Active days, 12 months</text>
 </svg>
