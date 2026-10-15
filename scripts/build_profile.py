@@ -42,6 +42,9 @@ GITHUB_USER = "JoannaKHughes"
 GITLAB_HOST = os.environ.get("GITLAB_HOST", "https://gitlab.vgl.cvg.ucdavis.edu")
 GITLAB_USER = os.environ.get("GITLAB_USER", "joanna")
 
+# LinkedIn custom URL slug (linkedin.com/in/<slug>). Change here if it changes on LinkedIn.
+LINKEDIN = "joanna-k-hughes"
+
 DEGREES = [
     # (degree, school, year)
     ("M.S. Computer Science", "University of the Pacific", 2025),
@@ -408,6 +411,10 @@ def readme(projects_md, updated):
     degrees = "\n".join(f"- {d}, {s}, {y}" for d, s, y in DEGREES)
     return f"""<p align="center">
   <img src="assets/banner.png" alt="Joanna Hughes" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/{LINKEDIN}"><img src="https://img.shields.io/badge/LinkedIn-{LINKEDIN.replace('-', '--')}-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
 ## Degrees

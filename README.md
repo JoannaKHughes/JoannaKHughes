@@ -2,6 +2,10 @@
   <img src="assets/banner.png" alt="Joanna Hughes" width="100%">
 </p>
 
+<p align="center">
+  <a href="https://www.linkedin.com/in/joanna-k-hughes"><img src="https://img.shields.io/badge/LinkedIn-joanna--k--hughes-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
+
 ## Degrees
 
 - M.S. Computer Science, University of the Pacific, 2025
