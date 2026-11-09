@@ -6,7 +6,6 @@
 <rect x="810" y="16" width="10" height="10" rx="2" fill="#f2a07b"/>
 <text x="825" y="25" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12">GitLab</text>
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-0.00s" repeatCount="indefinite"/>
-<circle cx="28.0" cy="52.0" r="1.6" fill="#2a3650"/>
 <circle cx="28.0" cy="70.0" r="1.6" fill="#2a3650"/>
 <circle cx="28.0" cy="88.0" r="1.6" fill="#2a3650"/>
 <g fill="#f2a07b" opacity="1.0"><ellipse cx="29.0" cy="106.0" rx="5.3" ry="3.6"/><polygon points="24.6,106.0 20.6,102.3 20.6,109.7"/></g><circle cx="31.8" cy="105.1" r="0.9" fill="#111a2e"/>
@@ -38,7 +37,7 @@
 <circle cx="82.0" cy="88.0" r="1.6" fill="#2a3650"/>
 <circle cx="82.0" cy="106.0" r="1.6" fill="#2a3650"/>
 <circle cx="82.0" cy="124.0" r="1.6" fill="#2a3650"/>
-<g fill="#f2a07b" opacity="1.0"><ellipse cx="83.0" cy="142.0" rx="5.3" ry="3.6"/><polygon points="78.6,142.0 74.6,138.3 74.6,145.7"/></g><circle cx="85.8" cy="141.1" r="0.9" fill="#111a2e"/>
+<g fill="#f2a07b" opacity="0.8"><ellipse cx="83.0" cy="142.0" rx="5.3" ry="3.6"/><polygon points="78.6,142.0 74.6,138.3 74.6,145.7"/></g><circle cx="85.8" cy="141.1" r="0.9" fill="#111a2e"/>
 <circle cx="82.0" cy="160.0" r="1.6" fill="#2a3650"/>
 </g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-0.60s" repeatCount="indefinite"/>
@@ -80,7 +79,7 @@
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-1.20s" repeatCount="indefinite"/>
 <circle cx="172.0" cy="52.0" r="1.6" fill="#2a3650"/>
 <g fill="#6fd3c1" opacity="0.8"><ellipse cx="173.0" cy="70.0" rx="5.3" ry="3.6"/><polygon points="168.6,70.0 164.6,66.3 164.6,73.7"/></g><circle cx="175.8" cy="69.1" r="0.9" fill="#111a2e"/>
-<g fill="#6fd3c1" opacity="1.0"><ellipse cx="173.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="168.6,88.0 164.6,84.3 164.6,91.7"/></g><circle cx="175.8" cy="87.1" r="0.9" fill="#111a2e"/>
+<g fill="#6fd3c1" opacity="0.8"><ellipse cx="173.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="168.6,88.0 164.6,84.3 164.6,91.7"/></g><circle cx="175.8" cy="87.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="173.0" cy="106.0" rx="5.3" ry="3.6"/><polygon points="168.6,106.0 164.6,102.3 164.6,109.7"/></g><circle cx="175.8" cy="105.1" r="0.9" fill="#111a2e"/>
 <g fill="#f2a07b" opacity="0.4"><ellipse cx="173.0" cy="124.0" rx="5.3" ry="3.6"/><polygon points="168.6,124.0 164.6,120.3 164.6,127.7"/></g><circle cx="175.8" cy="123.1" r="0.9" fill="#111a2e"/>
 <circle cx="172.0" cy="142.0" r="1.6" fill="#2a3650"/>
@@ -170,7 +169,7 @@
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-2.70s" repeatCount="indefinite"/>
 <circle cx="352.0" cy="52.0" r="1.6" fill="#2a3650"/>
 <g fill="#6fd3c1" opacity="0.8"><ellipse cx="353.0" cy="70.0" rx="5.3" ry="3.6"/><polygon points="348.6,70.0 344.6,66.3 344.6,73.7"/></g><circle cx="355.8" cy="69.1" r="0.9" fill="#111a2e"/>
-<g fill="#6fd3c1" opacity="1.0"><ellipse cx="353.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="348.6,88.0 344.6,84.3 344.6,91.7"/></g><circle cx="355.8" cy="87.1" r="0.9" fill="#111a2e"/>
+<g fill="#6fd3c1" opacity="0.8"><ellipse cx="353.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="348.6,88.0 344.6,84.3 344.6,91.7"/></g><circle cx="355.8" cy="87.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="0.4"><ellipse cx="353.0" cy="106.0" rx="5.3" ry="3.6"/><polygon points="348.6,106.0 344.6,102.3 344.6,109.7"/></g><circle cx="355.8" cy="105.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="0.8"><ellipse cx="353.0" cy="124.0" rx="5.3" ry="3.6"/><polygon points="348.6,124.0 344.6,120.3 344.6,127.7"/></g><circle cx="355.8" cy="123.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="0.8"><ellipse cx="353.0" cy="142.0" rx="5.3" ry="3.6"/><polygon points="348.6,142.0 344.6,138.3 344.6,145.7"/></g><circle cx="355.8" cy="141.1" r="0.9" fill="#111a2e"/>
@@ -205,7 +204,7 @@
 </g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-3.30s" repeatCount="indefinite"/>
 <circle cx="424.0" cy="52.0" r="1.6" fill="#2a3650"/>
-<g fill="#f2a07b" opacity="1.0"><ellipse cx="425.0" cy="70.0" rx="5.3" ry="3.6"/><polygon points="420.6,70.0 416.6,66.3 416.6,73.7"/></g><circle cx="427.8" cy="69.1" r="0.9" fill="#111a2e"/>
+<g fill="#f2a07b" opacity="0.8"><ellipse cx="425.0" cy="70.0" rx="5.3" ry="3.6"/><polygon points="420.6,70.0 416.6,66.3 416.6,73.7"/></g><circle cx="427.8" cy="69.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="0.8"><ellipse cx="425.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="420.6,88.0 416.6,84.3 416.6,91.7"/></g><circle cx="427.8" cy="87.1" r="0.9" fill="#111a2e"/>
 <g fill="#f2a07b" opacity="0.8"><ellipse cx="425.0" cy="106.0" rx="5.3" ry="3.6"/><polygon points="420.6,106.0 416.6,102.3 416.6,109.7"/></g><circle cx="427.8" cy="105.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="0.4"><ellipse cx="425.0" cy="124.0" rx="5.3" ry="3.6"/><polygon points="420.6,124.0 416.6,120.3 416.6,127.7"/></g><circle cx="427.8" cy="123.1" r="0.9" fill="#111a2e"/>
@@ -332,7 +331,7 @@
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-1.40s" repeatCount="indefinite"/>
 <circle cx="676.0" cy="52.0" r="1.6" fill="#2a3650"/>
 <g fill="#f2a07b" opacity="1.0"><ellipse cx="677.0" cy="70.0" rx="5.3" ry="3.6"/><polygon points="672.6,70.0 668.6,66.3 668.6,73.7"/></g><circle cx="679.8" cy="69.1" r="0.9" fill="#111a2e"/>
-<g fill="#f2a07b" opacity="1.0"><ellipse cx="677.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="672.6,88.0 668.6,84.3 668.6,91.7"/></g><circle cx="679.8" cy="87.1" r="0.9" fill="#111a2e"/>
+<g fill="#f2a07b" opacity="0.8"><ellipse cx="677.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="672.6,88.0 668.6,84.3 668.6,91.7"/></g><circle cx="679.8" cy="87.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="0.8"><ellipse cx="677.0" cy="106.0" rx="5.3" ry="3.6"/><polygon points="672.6,106.0 668.6,102.3 668.6,109.7"/></g><circle cx="679.8" cy="105.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="0.8"><ellipse cx="677.0" cy="124.0" rx="5.3" ry="3.6"/><polygon points="672.6,124.0 668.6,120.3 668.6,127.7"/></g><circle cx="679.8" cy="123.1" r="0.9" fill="#111a2e"/>
 <circle cx="676.0" cy="142.0" r="1.6" fill="#2a3650"/>
@@ -415,7 +414,7 @@
 <circle cx="838.0" cy="70.0" r="1.6" fill="#2a3650"/>
 <circle cx="838.0" cy="88.0" r="1.6" fill="#2a3650"/>
 <circle cx="838.0" cy="106.0" r="1.6" fill="#2a3650"/>
-<g fill="#6fd3c1" opacity="1.0"><ellipse cx="839.0" cy="124.0" rx="5.3" ry="3.6"/><polygon points="834.6,124.0 830.6,120.3 830.6,127.7"/></g><circle cx="841.8" cy="123.1" r="0.9" fill="#111a2e"/>
+<g fill="#6fd3c1" opacity="0.8"><ellipse cx="839.0" cy="124.0" rx="5.3" ry="3.6"/><polygon points="834.6,124.0 830.6,120.3 830.6,127.7"/></g><circle cx="841.8" cy="123.1" r="0.9" fill="#111a2e"/>
 <circle cx="838.0" cy="142.0" r="1.6" fill="#2a3650"/>
 <circle cx="838.0" cy="160.0" r="1.6" fill="#2a3650"/>
 </g>
@@ -447,17 +446,17 @@
 <g fill="#6fd3c1" opacity="0.4"><ellipse cx="893.0" cy="160.0" rx="5.3" ry="3.6"/><polygon points="888.6,160.0 884.6,156.3 884.6,163.7"/></g><circle cx="895.8" cy="159.1" r="0.9" fill="#111a2e"/>
 </g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-3.35s" repeatCount="indefinite"/>
-<g fill="#6fd3c1" opacity="1.0"><ellipse cx="911.0" cy="52.0" rx="5.3" ry="3.6"/><polygon points="906.6,52.0 902.6,48.3 902.6,55.7"/></g><circle cx="913.8" cy="51.1" r="0.9" fill="#111a2e"/>
+<g fill="#6fd3c1" opacity="0.8"><ellipse cx="911.0" cy="52.0" rx="5.3" ry="3.6"/><polygon points="906.6,52.0 902.6,48.3 902.6,55.7"/></g><circle cx="913.8" cy="51.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="911.0" cy="70.0" rx="5.3" ry="3.6"/><polygon points="906.6,70.0 902.6,66.3 902.6,73.7"/></g><circle cx="913.8" cy="69.1" r="0.9" fill="#111a2e"/>
 <g fill="#f2a07b" opacity="1.0"><ellipse cx="911.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="906.6,88.0 902.6,84.3 902.6,91.7"/></g><circle cx="913.8" cy="87.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="911.0" cy="106.0" rx="5.3" ry="3.6"/><polygon points="906.6,106.0 902.6,102.3 902.6,109.7"/></g><circle cx="913.8" cy="105.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="911.0" cy="124.0" rx="5.3" ry="3.6"/><polygon points="906.6,124.0 902.6,120.3 902.6,127.7"/></g><circle cx="913.8" cy="123.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="911.0" cy="142.0" rx="5.3" ry="3.6"/><polygon points="906.6,142.0 902.6,138.3 902.6,145.7"/></g><circle cx="913.8" cy="141.1" r="0.9" fill="#111a2e"/>
-<g fill="#6fd3c1" opacity="1.0"><ellipse cx="911.0" cy="160.0" rx="5.3" ry="3.6"/><polygon points="906.6,160.0 902.6,156.3 902.6,163.7"/></g><circle cx="913.8" cy="159.1" r="0.9" fill="#111a2e"/>
+<g fill="#6fd3c1" opacity="0.8"><ellipse cx="911.0" cy="160.0" rx="5.3" ry="3.6"/><polygon points="906.6,160.0 902.6,156.3 902.6,163.7"/></g><circle cx="913.8" cy="159.1" r="0.9" fill="#111a2e"/>
 </g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-3.50s" repeatCount="indefinite"/>
 <g fill="#6fd3c1" opacity="0.4"><ellipse cx="929.0" cy="52.0" rx="5.3" ry="3.6"/><polygon points="924.6,52.0 920.6,48.3 920.6,55.7"/></g><circle cx="931.8" cy="51.1" r="0.9" fill="#111a2e"/>
-<g fill="#6fd3c1" opacity="1.0"><ellipse cx="929.0" cy="70.0" rx="5.3" ry="3.6"/><polygon points="924.6,70.0 920.6,66.3 920.6,73.7"/></g><circle cx="931.8" cy="69.1" r="0.9" fill="#111a2e"/>
+<g fill="#6fd3c1" opacity="0.8"><ellipse cx="929.0" cy="70.0" rx="5.3" ry="3.6"/><polygon points="924.6,70.0 920.6,66.3 920.6,73.7"/></g><circle cx="931.8" cy="69.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="929.0" cy="88.0" rx="5.3" ry="3.6"/><polygon points="924.6,88.0 920.6,84.3 920.6,91.7"/></g><circle cx="931.8" cy="87.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="929.0" cy="106.0" rx="5.3" ry="3.6"/><polygon points="924.6,106.0 920.6,102.3 920.6,109.7"/></g><circle cx="931.8" cy="105.1" r="0.9" fill="#111a2e"/>
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="929.0" cy="124.0" rx="5.3" ry="3.6"/><polygon points="924.6,124.0 920.6,120.3 920.6,127.7"/></g><circle cx="931.8" cy="123.1" r="0.9" fill="#111a2e"/>
@@ -474,6 +473,7 @@
 <g fill="#6fd3c1" opacity="1.0"><ellipse cx="947.0" cy="160.0" rx="5.3" ry="3.6"/><polygon points="942.6,160.0 938.6,156.3 938.6,163.7"/></g><circle cx="949.8" cy="159.1" r="0.9" fill="#111a2e"/>
 </g>
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 1.5;0 0" dur="4s" begin="-3.80s" repeatCount="indefinite"/>
-<circle cx="964.0" cy="52.0" r="1.6" fill="#2a3650"/>
+<g fill="#6fd3c1" opacity="1.0"><ellipse cx="965.0" cy="52.0" rx="5.3" ry="3.6"/><polygon points="960.6,52.0 956.6,48.3 956.6,55.7"/></g><circle cx="967.8" cy="51.1" r="0.9" fill="#111a2e"/>
+<circle cx="964.0" cy="70.0" r="1.6" fill="#2a3650"/>
 </g>
 </svg>
