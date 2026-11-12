@@ -11,7 +11,7 @@
 <polyline points="66.2,290.0 66.3,289.3 66.5,288.7 66.6,288.0 66.8,287.3 66.9,286.7 67.1,286.0 67.2,285.3 67.4,284.7 67.5,284.0 67.6,283.3 67.8,282.7 67.9,282.0" fill="none" stroke="#f2a07b" stroke-width="4" stroke-linecap="round"/>
 <circle cx="67.9" cy="282.0" r="4" fill="#f2a07b"/>
 <ellipse cx="71.9" cy="273.0" rx="12" ry="3.5" fill="#f2a07b" opacity="0.85" transform="rotate(-60 71.9 273.0)"/>
-<text x="67.9" y="260.0" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">9</text>
+<text x="67.9" y="260.0" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">3</text>
 </g>
 <text x="66.2" y="322" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">Nov 25</text>
 <g><animateTransform attributeName="transform" type="rotate" values="-2.1 138.5 290;2.1 138.5 290;-2.1 138.5 290" dur="5.7s" repeatCount="indefinite"/>
@@ -116,13 +116,13 @@
 </g>
 <text x="861.5" y="322" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">Oct 26</text>
 <g><animateTransform attributeName="transform" type="rotate" values="-1.5 933.8 290;1.5 933.8 290;-1.5 933.8 290" dur="5.0s" repeatCount="indefinite"/>
-<polyline points="931.2,290.0 931.9,286.2 932.8,282.4 933.6,278.6 934.5,274.7 935.3,270.9 936.1,267.1 936.9,263.3 937.5,259.5 938.0,255.7 938.4,251.8 938.7,248.0 938.8,244.2" fill="none" stroke="#6fd3c1" stroke-width="4" stroke-linecap="round"/>
-<polyline points="938.8,244.2 938.8,244.1 938.8,244.0 938.8,243.9 938.8,243.8 938.8,243.7 938.8,243.6 938.8,243.5 938.8,243.4 938.8,243.3 938.8,243.2 938.8,243.1 938.8,242.9" fill="none" stroke="#f2a07b" stroke-width="4" stroke-linecap="round"/>
+<polyline points="931.2,290.0 931.9,286.1 932.8,282.3 933.7,278.4 934.5,274.5 935.4,270.7 936.2,266.8 936.9,262.9 937.6,259.1 938.1,255.2 938.5,251.3 938.7,247.5 938.8,243.6" fill="none" stroke="#6fd3c1" stroke-width="4" stroke-linecap="round"/>
+<polyline points="938.8,243.6 938.8,243.5 938.8,243.4 938.8,243.3 938.8,243.2 938.8,243.1 938.8,242.9 938.8,242.8 938.8,242.7 938.8,242.6 938.8,242.5 938.8,242.4 938.8,242.3" fill="none" stroke="#f2a07b" stroke-width="4" stroke-linecap="round"/>
 <ellipse cx="941.7" cy="278.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(-30 941.7 278.0)"/>
 <ellipse cx="929.1" cy="262.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(30 929.1 262.0)"/>
-<circle cx="938.8" cy="242.9" r="4" fill="#f2a07b"/>
-<ellipse cx="942.8" cy="233.9" rx="12" ry="3.5" fill="#f2a07b" opacity="0.85" transform="rotate(-60 942.8 233.9)"/>
-<text x="938.8" y="220.9" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">74</text>
+<circle cx="938.8" cy="242.3" r="4" fill="#f2a07b"/>
+<ellipse cx="942.8" cy="233.3" rx="12" ry="3.5" fill="#f2a07b" opacity="0.85" transform="rotate(-60 942.8 233.3)"/>
+<text x="938.8" y="220.3" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">75</text>
 </g>
 <text x="933.8" y="322" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">Nov 26</text>
 <path d="M0 290 Q 250.0 284 500.0 290 T 1000 290 V 328 Q 1000 340 988 340 H 12 Q 0 340 0 328 Z" fill="#1c2742"/>
