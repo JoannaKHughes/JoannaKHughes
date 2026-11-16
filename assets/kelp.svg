@@ -100,14 +100,14 @@
 </g>
 <text x="861.5" y="322" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">Oct 26</text>
 <g><animateTransform attributeName="transform" type="rotate" values="-1.5 933.8 290;1.5 933.8 290;-1.5 933.8 290" dur="5.0s" repeatCount="indefinite"/>
-<polyline points="931.2,290.0 932.3,284.5 933.5,278.9 934.8,273.4 936.0,267.9 937.0,262.4 937.9,256.8 938.5,251.3 938.8,245.8 938.8,240.3 938.5,234.7 937.9,229.2 937.0,223.7" fill="none" stroke="#6fd3c1" stroke-width="4" stroke-linecap="round"/>
+<polyline points="931.2,290.0 932.3,284.3 933.6,278.7 934.9,273.0 936.1,267.4 937.1,261.7 938.0,256.1 938.6,250.4 938.8,244.8 938.8,239.1 938.4,233.5 937.7,227.8 936.8,222.2" fill="none" stroke="#6fd3c1" stroke-width="4" stroke-linecap="round"/>
 <ellipse cx="941.7" cy="278.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(-30 941.7 278.0)"/>
 <ellipse cx="929.1" cy="262.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(30 929.1 262.0)"/>
 <ellipse cx="946.8" cy="246.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(-30 946.8 246.0)"/>
 <ellipse cx="930.0" cy="230.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(30 930.0 230.0)"/>
-<circle cx="937.0" cy="223.7" r="4" fill="#6fd3c1"/>
-<ellipse cx="941.0" cy="214.7" rx="12" ry="3.5" fill="#6fd3c1" opacity="0.85" transform="rotate(-60 941.0 214.7)"/>
-<text x="937.0" y="201.7" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">88</text>
+<circle cx="936.8" cy="222.2" r="4" fill="#6fd3c1"/>
+<ellipse cx="940.8" cy="213.2" rx="12" ry="3.5" fill="#6fd3c1" opacity="0.85" transform="rotate(-60 940.8 213.2)"/>
+<text x="936.8" y="200.2" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">90</text>
 </g>
 <text x="933.8" y="322" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">Nov 26</text>
 <path d="M0 290 Q 250.0 284 500.0 290 T 1000 290 V 328 Q 1000 340 988 340 H 12 Q 0 340 0 328 Z" fill="#1c2742"/>
