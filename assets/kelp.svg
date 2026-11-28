@@ -100,16 +100,16 @@
 </g>
 <text x="861.5" y="322" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">Oct 26</text>
 <g><animateTransform attributeName="transform" type="rotate" values="-1.5 933.8 290;1.5 933.8 290;-1.5 933.8 290" dur="5.0s" repeatCount="indefinite"/>
-<polyline points="931.2,290.0 933.0,281.3 935.0,272.5 936.8,263.8 938.1,255.1 938.8,246.4 938.7,237.6 937.9,228.9 936.4,220.2 934.5,211.5 932.6,202.7 930.8,194.0 929.5,185.3" fill="none" stroke="#6fd3c1" stroke-width="4" stroke-linecap="round"/>
+<polyline points="931.2,290.0 933.0,281.2 935.0,272.4 936.8,263.6 938.1,254.8 938.8,246.1 938.7,237.3 937.8,228.5 936.3,219.7 934.4,210.9 932.4,202.1 930.7,193.3 929.4,184.5" fill="none" stroke="#6fd3c1" stroke-width="4" stroke-linecap="round"/>
 <ellipse cx="941.7" cy="278.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(-30 941.7 278.0)"/>
 <ellipse cx="929.1" cy="262.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(30 929.1 262.0)"/>
 <ellipse cx="946.8" cy="246.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(-30 946.8 246.0)"/>
 <ellipse cx="930.0" cy="230.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(30 930.0 230.0)"/>
 <ellipse cx="943.1" cy="214.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(-30 943.1 214.0)"/>
 <ellipse cx="923.6" cy="198.0" rx="9" ry="3.2" fill="#6fd3c1" opacity="0.8" transform="rotate(30 923.6 198.0)"/>
-<circle cx="929.5" cy="185.3" r="4" fill="#6fd3c1"/>
-<ellipse cx="933.5" cy="176.3" rx="12" ry="3.5" fill="#6fd3c1" opacity="0.85" transform="rotate(-60 933.5 176.3)"/>
-<text x="929.5" y="163.3" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">139</text>
+<circle cx="929.4" cy="184.5" r="4" fill="#6fd3c1"/>
+<ellipse cx="933.4" cy="175.5" rx="12" ry="3.5" fill="#6fd3c1" opacity="0.85" transform="rotate(-60 933.4 175.5)"/>
+<text x="929.4" y="162.5" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">140</text>
 </g>
 <text x="933.8" y="322" fill="#8b97ad" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" text-anchor="middle">Nov 26</text>
 <path d="M0 290 Q 250.0 284 500.0 290 T 1000 290 V 328 Q 1000 340 988 340 H 12 Q 0 340 0 328 Z" fill="#1c2742"/>
